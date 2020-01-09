@@ -1,5 +1,17 @@
 <template>
     <div class="container">
+        <link rel="stylesheet" href="https://www.kcar.com/resources/css/re_import.css?v=20191230094250">
+        <link rel="stylesheet" href="https://www.kcar.com/resources/css/plugin/selectric.css?v=20191230094250">
+        <link rel="stylesheet" type="text/css" href="https://www.kcar.com/resources/css/plugin/ion.rangeSlider.css">
+        <link rel="stylesheet" type="text/css" href="https://www.kcar.com/resources/css/plugin/ion.rangeSlider.skinHTML5.css">
+        <link rel="stylesheet" href="https://www.kcar.com/resources/css/plugin/uniform.css">
+        <link rel="stylesheet" href="https://www.kcar.com/resources/css/plugin/jquery.scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="http://static.danawa.com/new/recss/auto/common.css?v=200108090126">
+        <link rel="stylesheet" type="text/css" href="http://static.danawa.com/new/recss/auto/home.css?v=200108090126">
+        <link rel="stylesheet" type="text/css" href="http://static.danawa.com/new/recss/auto/theme.css?v=200108090126">
+        <link rel="stylesheet" type="text/css" href="http://static.danawa.com/new/recss/auto/auto.css?v=200108090126">
+        <link rel="stylesheet" type="text/css" href="http://static.danawa.com/new/recss/auto/window.css?v=200108090126">
+        <link rel="stylesheet" type="text/css" href="http://static.danawa.com/new/recss/auto/compare.css?v=200103163154">
                 <nav class="navbar navbar-toggleable-sm fixed-top bg-primary navbar-light">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -20,6 +32,7 @@
                                 <router-link to="/buycarSelectGoods">자동차구매1 </router-link>
                                 <router-link to="/buycarInsertContractorInfomation">자동차구매2 </router-link>
                                 <router-link to="/buycarInsertContractorInfomation">자동차구매3 </router-link>
+                                  <a href="/recommendHome"> 딜러에게 추천받기</a>
                                 <a id="home" href="#">
                                   <span>차계부</span>
                                 </a>
@@ -29,7 +42,7 @@
                                 <a id="home" href="#">
                                   <span>SNS(REVIEW)</span>
                                 </a>
-                                <a id="home" href="#">
+                                <a id="home" href="/companyHome">
                                   <span>ADMIN</span>
                                 </a>
                               </Slide >
@@ -119,7 +132,10 @@ nav .navbar-collapse.show li a.active  {
   border: 0;
 }
 .bg-primary {
-  color: #fff;
-  background-color: black !important;
+    color: #fff;
+    background-color: black !important;
 }
+.container{
+        margin: 0 200px;
+    }
 </style>

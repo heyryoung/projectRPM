@@ -16,6 +16,17 @@ import MypageModifyCheck from '@/components/cs/MypageModifyCheck.vue'
 import SeenCar from '@/components/contents/SeenCar.vue'
 import StationInfo from '@/components/carbook/StationInfo.vue'
 import MapList from '@/components/carbook/MapList.vue'
+import Condition from "@/components/recommend/condition.vue"
+import RecommendContent from "@/components/recommend/recommendContent.vue"
+import Compare from "@/components/recommend/compare.vue"
+import CarList from "@/components/company/carList.vue"
+import chart from "@/components/company/chartExample.vue"
+import companyHome from "@/components/company/companyHome.vue"
+import customerDetail from "@/components/company/customerDetail.vue"
+import companyMain from "@/components/company/companyMain.vue"
+import CustomerList from "@/components/company/customerList.vue"
+import Recipt from "@/components/recommend/recipt.vue"
+import recommendHome from "@/components/recommend/recommendHome.vue"
 
 Vue.use(Router)
 
@@ -37,6 +48,22 @@ export default new Router({
 		{path:'/buycar', name:'buycar', component : Buycar},
 		{path:'/buycarSelectGoods', name:'buycarSelectGoods', component : BuycarSelectGoods},
 		{path:'/buycarInsertContractorInfomation', name:'buycarInsertContractorInfomation', component : BuycarInsertContractorInfomation},
-		{path:'/buycarInsertContractorInfomation2', name:'buycarInsertContractorInfomation2', component : BuycarInsertContractorInfomation2}
+		{path:'/buycarInsertContractorInfomation2', name:'buycarInsertContractorInfomation2', component : BuycarInsertContractorInfomation2},
+		// 강성조꺼
+
+		{path: '/companyHome',name: 'companyHome', component:companyHome,children:
+				[
+					{path: '/cmain',name: 'companyMain', components:{company:companyMain} },
+					{path: '/customerList',name: 'CustomerList', components:{company: CustomerList}},
+					{path: '/carList',name: 'CarList', components:{company: CarList}},
+					{path: '/chart',name: 'chart', components:{company: chart}},
+					{path: '/customerDetail',name: 'customerDetail', components:{company: customerDetail}}
+				]},
+		{path: '/recipt',name: 'Recipt', component:Recipt },
+		{path: '/recommendHome',name: 'recommendHome', component:recommendHome, children:[
+				{path: '/compare',name: 'Compare', components: {content:Compare}},
+				{path: '/recommendContent',name: 'RecommendContent', components: {content:RecommendContent}},
+				{path: '/condition',name: 'Condition', components: {content:Condition}}
+			]}
 	]
 })
