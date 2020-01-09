@@ -20,7 +20,7 @@ public class BoardProxy {
 		String uid = uids.get(0);
 		return uid;
 	}
-   
+      
 	public String comment() {
 		List<String> fcontent = Arrays.asList("첫 방문인데", "세번째 방문인데", "여러번 방문인데", "다시 오고싶은", "훌륭한", "다시한번 오고싶은",
 				"두번째 방문인데", "자주왔지만 다음엔");
