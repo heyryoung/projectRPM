@@ -6,7 +6,7 @@ export default {
     name: 'contents',
     namespaced: true,
     state,
-    getters,
+    getters,  
     actions,
     mutations
 }
