@@ -1,5 +1,5 @@
 <template>
-
+  
 <div id="wrap">
 	<div class="gis_map" style="margin-top:30px; height: 800px; width: 800px; border: 1px solid black">
 				</div>
